@@ -1,0 +1,156 @@
+.books-list-container {
+    margin-top: 20px;
+    max-width: 1200px;
+    padding: 20px;
+    display: grid;
+    justify-content: space-evenly;
+    gap: 10px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 190px;
+
+  }
+  
+
+  .books-list-container h2 {
+    margin-top: 30px;
+  }
+  
+.book-item {
+  background-color: #e2f4f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  padding: 4px;
+  text-align: center;
+  width: 90%;
+  height: 95%;
+
+}
+  
+.book-image {
+  margin-bottom: 10px;
+}
+
+.book-image img {
+    max-width: 40%;
+    max-height: 40%;
+  }
+  
+  .book-item .book-details {
+    display: none;
+    padding: 10px;
+    margin-top: 50px;
+  }
+  
+  .book-item.show-details .book-details {
+    display: flex;
+    margin-top: 50px;
+  }
+  
+  .book-item h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .book-item p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 9px;
+  }
+  
+  .more-button {
+    background-color: #8fd7e4;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 4px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .more-button:hover {
+    background-color: #fff;
+    color: #007bff;
+  }
+  
+  .rating-button {
+    background-color: #8fd7e4;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 4px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-left: 10px;
+    display: inline-block;
+  }
+  
+  .rating-button:hover {
+    background-color: #fff;
+    color: #007bff;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .book-item {
+      width: 100%;
+    }
+  }
+  
+  .sign-up-link{
+    margin-left: 850px;
+  }
+
+  .my-books-link{
+    margin-left: 850px;
+  }
+  
+ nav-link-logout-link{
+  margin-left: 850x;
+ }
+
+  .navbar{
+    position: fixed;
+    width: 100%;
+  }
+  
+  .save-button {
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+    margin-left: 10px;
+    background-color: transparent;
+    display: inline-block;
+    transition: background-color 0.3s;
+
+  }
+
+  .save-button .bookmark-icon {
+    color: #000;
+   
+  }
+  
+  .bookmark-icon {
+    color: #000;
+  }
+  
+  .save-button:hover .bookmark-icon {
+    color: gray;
+  }
+
+  
+  .save-button:hover::before {
+    content: "Save for later";
+    display: block;
+    position: absolute;
+    font-size: 8px;
+    font-weight: bold;
+    background-color: #3d5700;
+    color: #fff;
+    padding: 0.15rem;
+    border-radius: 1px;
+    margin-top: -11px;
+  }
